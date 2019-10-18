@@ -138,6 +138,9 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+zooAnimals.forEach(function(animal){
+  displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}.`); 
+})
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -145,8 +148,12 @@ console.log(displayNames);
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
-
 const lowCaseAnimalNames = [];
+zooAnimals.map(function(currentValue){
+  return lowCaseAnimalNames.push(currentValue.animal_name.toLowerCase()
+  ); 
+}); 
+
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -155,6 +162,11 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+zooAnimals.filter(function(currentValue){
+  if (currentValue.population < 5){
+    return lowPopulationAnimals.push(currentValue); 
+  }
+})
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
