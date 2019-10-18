@@ -99,11 +99,18 @@ console.log(universities.sort());
 "Josh josh@example.com"
 Log the result of your new array. */
 const contactInfo = [];
-graduates.filter(graduate=> contactInfo.push(`${graduates.first_name} ${graduates.email}`)); 
+graduates.forEach(function(grad){
+  return contactInfo.push(`${grad.first_name} ${grad.email}`);
+}) 
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
+const unisWithUni = [{}];
+graduates.map(function(currentValue){
+  if(currentValue.university.includes("Uni")){
+  return unisWithUni.push(currentValue.university)
+  }; 
+})
 
 console.log(unisWithUni);
 
