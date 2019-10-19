@@ -30,32 +30,59 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+ .forEach allows you to pass a function through an array, just like .map.  But .map will create a new array for your new values.  .forEach will mutual the array you’re on.
+
+
+
 2. What is the difference between a function and a method?
+
+A method is a function inside of an object.  Their difference is location, location, location. 
+
+
 
 3. What is closure?
 
+A closure is the loop of information being passing down through the scope that js permits.  Brit gave the example of scope for closures:  Global to Nation to State to City.  The rule is, everyone moves from the country to the city.  No one moves from the City to the Country (Nation).  That’s the flow of information you can pull into a function (closure).  
+
+
+
 4. Describe the four rules of the 'this' keyword.
 
+Implicit, Explicit, Window, and New
+
+           Implicit:  look to the left of the dot notation to identify which object this refers to 
+           Explicit:  call them, let me see them (shakespeare)
+                         .call(); , .bind(); , .apply(); 
+          .call allows you to argue in variables one by one
+          .apply allows you to argue in an array 
+          .bind creates a new function by binding the information and storing it for later use.
+
+
+
 5. Why do we need super() in an extended class?
+
+  Extend tells the object the address of the parent, which traits it will inherit.  
+  Super allows you to access the information from the parent.  When extend is used with super it acts as .bind();. 
+
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
-- [ ] TL then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your team lead as a Reviewer on the Pull-request
+- [x] TL then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
@@ -66,7 +93,7 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
